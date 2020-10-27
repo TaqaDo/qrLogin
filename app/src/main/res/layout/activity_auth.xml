@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".ui.auth.AuthActivity">
+
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="325dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginTop="190dp"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/auth_login_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view" />
+
+    <TextView
+        android:id="@+id/text_view_2"
+        android:layout_width="325dp"
+        android:layout_height="16dp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginTop="5dp"
+        android:text="Password"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/auth_login_et" />
+
+    <EditText
+        android:id="@+id/auth_password_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_view_2" />
+
+    <Button
+        android:id="@+id/generate_qr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Qr code"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/sing_in"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/sing_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
